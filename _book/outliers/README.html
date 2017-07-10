@@ -1,0 +1,1198 @@
+<!DOCTYPE HTML>
+<html lang="en-US" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <title>Outliers | Nearest Neighbour Recommendations</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 1.0.3">
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    
+    
+    
+    <link rel="next" href="../ann_regressor_and_classifier/README" />
+    
+    
+    <link rel="prev" href="../clustering_anime/k-means++.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+<link rel="stylesheet" href="../gitbook/style.css">
+
+
+        
+    <div class="book"  data-level="3" data-basepath=".." data-revision="1499423496695">
+    
+
+<div class="book-summary">
+    <div class="book-search">
+        <input type="text" placeholder="Type to search" class="form-control" />
+    </div>
+    <ul class="summary">
+        
+    	
+    	
+    	
+
+        
+
+        
+    
+        
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../index.html">
+                        <i class="fa fa-check"></i>
+                        
+                         Introduction
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1" data-path="anime-recommendations/README.html">
+            
+                
+                    <a href="../anime-recommendations/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                         Anime Recommendations
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="1.1" data-path="anime-recommendations/README.html">
+            
+                
+                    <a href="../anime-recommendations/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.</b>
+                        
+                         Introduction
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.2" data-path="anime-recommendations/preprocessing.html">
+            
+                
+                    <a href="../anime-recommendations/preprocessing.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.2.</b>
+                        
+                         Preprocessing
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.3" data-path="anime-recommendations/a_simple_recommendation_sytem.html">
+            
+                
+                    <a href="../anime-recommendations/a_simple_recommendation_sytem.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.3.</b>
+                        
+                         A simple recommendation sytem
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.4" data-path="anime-recommendations/naruto_recommendations.html">
+            
+                
+                    <a href="../anime-recommendations/naruto_recommendations.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.4.</b>
+                        
+                         Naruto Recommendations
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.5" data-path="anime-recommendations/kimi_no_na_wa_recommendations.html">
+            
+                
+                    <a href="../anime-recommendations/kimi_no_na_wa_recommendations.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.5.</b>
+                        
+                         Kimi no Na Wa Recommendations
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.6" data-path="anime-recommendations/gintama_recommendations.html">
+            
+                
+                    <a href="../anime-recommendations/gintama_recommendations.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.6.</b>
+                        
+                         Gintama Recommendations
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.7" data-path="anime-recommendations/improvements.html">
+            
+                
+                    <a href="../anime-recommendations/improvements.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.7.</b>
+                        
+                         Improvements
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.8" data-path="anime-recommendations/gintama_recommendations_ii.html">
+            
+                
+                    <a href="../anime-recommendations/gintama_recommendations_ii.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.8.</b>
+                        
+                         Gintama Recommendations II
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.9" data-path="anime-recommendations/conclusion.html">
+            
+                
+                    <a href="../anime-recommendations/conclusion.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.9.</b>
+                        
+                         Conclusion
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.10" data-path="anime-recommendations/further_work.html">
+            
+                
+                    <a href="../anime-recommendations/further_work.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.10.</b>
+                        
+                         Further Work
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2" data-path="clustering_anime/README.html">
+            
+                
+                    <a href="../clustering_anime/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                         Clustering anime
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="2.1" data-path="clustering_anime/k-means++.html">
+            
+                
+                    <a href="../clustering_anime/k-means++.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.</b>
+                        
+                         k-means++
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter active" data-level="3" data-path="outliers/README.html">
+            
+                
+                    <a href="../outliers/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                         Outliers
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4" data-path="ann_regressor_and_classifier/README">
+            
+                
+                    <a href="../ann_regressor_and_classifier/README">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                         ANN regressor and classifier
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="4.1" data-path="ann_regressor_and_classifier/ann_regressor.html">
+            
+                
+                    <a href="../ann_regressor_and_classifier/ann_regressor.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.</b>
+                        
+                         ANN regressor
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4.2" data-path="ann_regressor_and_classifier/ann_classifier.html">
+            
+                
+                    <a href="../ann_regressor_and_classifier/ann_classifier.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.2.</b>
+                        
+                         ANN classifier
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+
+        
+        <li class="divider"></li>
+        <li>
+            <a href="http://www.gitbook.io/" target="blank" class="gitbook-link">Published using GitBook</a>
+        </li>
+        
+    </ul>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header">
+    <!-- Actions Left -->
+    <a href="#" class="btn pull-left toggle-summary" aria-label="Toggle summary"><i class="fa fa-align-justify"></i></a>
+    <a href="#" class="btn pull-left toggle-search" aria-label="Toggle search"><i class="fa fa-search"></i></a>
+    
+    <div id="font-settings-wrapper" class="dropdown pull-left">
+        <a href="#" class="btn toggle-dropdown" aria-label="Toggle font settings"><i class="fa fa-font"></i>
+        </a>
+        <div class="dropdown-menu font-settings">
+    <div class="dropdown-caret">
+        <span class="caret-outer"></span>
+        <span class="caret-inner"></span>
+    </div>
+
+    <div class="buttons">
+        <button type="button" id="reduce-font-size" class="button size-2">A</button>
+        <button type="button" id="enlarge-font-size" class="button size-2">A</button>
+    </div>
+
+    <div class="buttons font-family-list">
+        <button type="button" data-font="0" class="button">Serif</button>
+        <button type="button" data-font="1" class="button">Sans</button>
+    </div>
+
+    <div class="buttons color-theme-list">
+        <button type="button" id="color-theme-preview-0" class="button size-3" data-theme="0">White</button>
+        <button type="button" id="color-theme-preview-1" class="button size-3" data-theme="1">Sepia</button>
+        <button type="button" id="color-theme-preview-2" class="button size-3" data-theme="2">Night</button>
+    </div>
+</div>
+
+    </div>
+
+    <!-- Actions Right -->
+    
+    <div class="dropdown pull-right">
+        <a href="#" class="btn toggle-dropdown" aria-label="Toggle share dropdown"><i class="fa fa-share-alt"></i>
+        </a>
+        <div class="dropdown-menu font-settings dropdown-left">
+            <div class="dropdown-caret">
+                <span class="caret-outer"></span>
+                <span class="caret-inner"></span>
+            </div>
+            <div class="buttons">
+                <button type="button" data-sharing="twitter" class="button">Twitter</button>
+                <button type="button" data-sharing="google-plus" class="button">Google</button>
+                <button type="button" data-sharing="facebook" class="button">Facebook</button>
+                <button type="button" data-sharing="weibo" class="button">Weibo</button>
+                <button type="button" data-sharing="instapaper" class="button">Instapaper</button>
+            </div>
+        </div>
+    </div>
+    
+
+    
+    <a href="#" target="_blank" class="btn pull-right google-plus-sharing-link sharing-link" data-sharing="google-plus" aria-label="Share on Google Plus"><i class="fa fa-google-plus"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right facebook-sharing-link sharing-link" data-sharing="facebook" aria-label="Share on Facebook"><i class="fa fa-facebook"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right twitter-sharing-link sharing-link" data-sharing="twitter" aria-label="Share on Twitter"><i class="fa fa-twitter"></i></a>
+    
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../" >Nearest Neighbour Recommendations</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-gitbook_7301">
+                    
+                        <h1 id="outlier-detection">Outlier Detection</h1>
+<p>Using clustering with only the below given features and data of 12291 anime, 42 outliers were found.</p>
+<p>Lets analyze some of them</p>
+<table>
+<thead>
+<tr>
+<th>Anime</th>
+<th>Type</th>
+<th>Episodes</th>
+<th>Rating</th>
+<th>Members</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Naruto</td>
+<td>TV</td>
+<td>220</td>
+<td>7.81</td>
+<td>683297</td>
+</tr>
+<tr>
+<td>Mononoke Hime</td>
+<td>Movie</td>
+<td>1</td>
+<td>8.81</td>
+<td>339556</td>
+</tr>
+<tr>
+<td>Sen to Chihiro no Kamikakushi</td>
+<td>Movie</td>
+<td>1</td>
+<td>8.93</td>
+<td>466254</td>
+</tr>
+<tr>
+<td>Dragon Ball</td>
+<td>TV</td>
+<td>153</td>
+<td>8.16</td>
+<td>316102</td>
+</tr>
+<tr>
+<td>FLCL</td>
+<td>OVA</td>
+<td>6</td>
+<td>8.06</td>
+<td>305165</td>
+</tr>
+<tr>
+<td>InuYasha</td>
+<td>TV</td>
+<td>167</td>
+<td>7.89</td>
+<td>281632</td>
+</tr>
+<tr>
+<td>Bleach</td>
+<td>TV</td>
+<td>366</td>
+<td>7.95</td>
+<td>624055</td>
+</tr>
+<tr>
+<td>Yu☆Gi☆Oh! Duel Monsters</td>
+<td>TV</td>
+<td>224</td>
+<td>7.57</td>
+<td>132099</td>
+</tr>
+<tr>
+<td>Pokemon</td>
+<td>TV</td>
+<td>276</td>
+<td>7.43</td>
+<td>229157</td>
+</tr>
+<tr>
+<td>Hellsing Ultimate</td>
+<td>OVA</td>
+<td>10</td>
+<td>8.59</td>
+<td>297454</td>
+</tr>
+<tr>
+<td>Dragon Ball Z</td>
+<td>TV</td>
+<td>291</td>
+<td>8.32</td>
+<td>375662</td>
+</tr>
+<tr>
+<td>Ginga Eiyuu Densetsu</td>
+<td>OVA</td>
+<td>110</td>
+<td>9.11</td>
+<td>80679</td>
+</tr>
+<tr>
+<td>Gintama</td>
+<td>TV</td>
+<td>201</td>
+<td>9.04</td>
+<td>336376</td>
+</tr>
+<tr>
+<td>D.Gray-man</td>
+<td>TV</td>
+<td>103</td>
+<td>8.2</td>
+<td>34399</td>
+</tr>
+<tr>
+<td>Death Note</td>
+<td>TV</td>
+<td>37</td>
+<td>8.71</td>
+<td>1013917</td>
+</tr>
+<tr>
+<td>Code Geass: Hangyaku no Lelouch</td>
+<td>TV</td>
+<td>25</td>
+<td>8.83</td>
+<td>715151</td>
+</tr>
+<tr>
+<td>Katekyo Hitman Reborn!</td>
+<td>TV</td>
+<td>203</td>
+<td>8.37</td>
+<td>258103</td>
+</tr>
+<tr>
+<td>Doraemon (1979)</td>
+<td>TV</td>
+<td>1787</td>
+<td>7.76</td>
+<td>14233</td>
+</tr>
+<tr>
+<td>Ninja Hattori-kun</td>
+<td>TV</td>
+<td>694</td>
+<td>6.92</td>
+<td>2116</td>
+</tr>
+<tr>
+<td>Hetalia Axis Powers</td>
+<td>ONA</td>
+<td>52</td>
+<td>7.76</td>
+<td>144898</td>
+</tr>
+<tr>
+<td>Fullmetal Alchemist: Brotherhood</td>
+<td>TV</td>
+<td>64</td>
+<td>9.26</td>
+<td>793665</td>
+</tr>
+<tr>
+<td>Manga Nippon Mukashibanashi (1976)</td>
+<td>TV</td>
+<td>1471</td>
+<td>6.48</td>
+<td>406</td>
+</tr>
+<tr>
+<td>Angel Beats!</td>
+<td>TV</td>
+<td>13</td>
+<td>8.39</td>
+<td>717796</td>
+</tr>
+<tr>
+<td>Fairy Tail</td>
+<td>TV</td>
+<td>175</td>
+<td>8.22</td>
+<td>584590</td>
+</tr>
+<tr>
+<td>Obake no Q-tarou (1985)</td>
+<td>TV</td>
+<td>510</td>
+<td>6.54</td>
+<td>161</td>
+</tr>
+<tr>
+<td>Hoka Hoka Kazoku</td>
+<td>TV</td>
+<td>1428</td>
+<td>6.05</td>
+<td>194</td>
+</tr>
+<tr>
+<td>Shima Shima Tora no Shimajirou</td>
+<td>TV</td>
+<td>726</td>
+<td>6.25</td>
+<td>237</td>
+</tr>
+<tr>
+<td>Sekai Monoshiri Ryoko</td>
+<td>TV</td>
+<td>1006</td>
+<td>5.92</td>
+<td>153</td>
+</tr>
+<tr>
+<td>Hunter x Hunter (2011)</td>
+<td>TV</td>
+<td>148</td>
+<td>9.13</td>
+<td>425855</td>
+</tr>
+<tr>
+<td>Perman (1983)</td>
+<td>TV</td>
+<td>526</td>
+<td>6.34</td>
+<td>447</td>
+</tr>
+<tr>
+<td>Sword Art Online</td>
+<td>TV</td>
+<td>25</td>
+<td>7.83</td>
+<td>893100</td>
+</tr>
+<tr>
+<td>Oyako Club</td>
+<td>TV</td>
+<td>1818</td>
+<td>6.18</td>
+<td>160</td>
+</tr>
+<tr>
+<td>Shingeki no Kyojin</td>
+<td>TV</td>
+<td>25</td>
+<td>8.54</td>
+<td>896229</td>
+</tr>
+<tr>
+<td>Kotowaza House</td>
+<td>TV</td>
+<td>773</td>
+<td>5.63</td>
+<td>110</td>
+</tr>
+<tr>
+<td>Fairy Tail (2014)</td>
+<td>TV</td>
+<td>102</td>
+<td>8.25</td>
+<td>255076</td>
+</tr>
+<tr>
+<td>Monoshiri Daigaku: Ashita no Calendar</td>
+<td>TV</td>
+<td>1274</td>
+<td>6.8</td>
+<td>12</td>
+</tr>
+<tr>
+<td>Manga Jinbutsushi</td>
+<td>TV</td>
+<td>365</td>
+<td>6.91</td>
+<td>71</td>
+</tr>
+<tr>
+<td>Kirin Monoshiri Yakata</td>
+<td>TV</td>
+<td>1565</td>
+<td>5.56</td>
+<td>116</td>
+</tr>
+<tr>
+<td>Goman-hiki</td>
+<td>Movie</td>
+<td>100</td>
+<td>7</td>
+<td>56</td>
+</tr>
+<tr>
+<td>Ninja-tai Gatchaman ZIP!</td>
+<td>TV</td>
+<td>475</td>
+<td>5.5</td>
+<td>46</td>
+</tr>
+<tr>
+<td>Kirin Ashita no Calendar</td>
+<td>TV</td>
+<td>1306</td>
+<td>6.43</td>
+<td>59</td>
+</tr>
+<tr>
+<td>Shelter</td>
+<td>Music</td>
+<td>1</td>
+<td>8.38</td>
+<td>71136</td>
+</tr>
+</tbody>
+</table>
+<h2 id="some-observations">Some observations</h2>
+<ul>
+<li><p>Naruto is the only TV series with more than 200 episodes and 650k members.</p>
+</li>
+<li><p>There are many naruto like anime with great number of episodes and also a great number of fans like Bleach, Dragon Ball Z, Pokemon</p>
+</li>
+<li><p>There are also anime with a great number of episodes yet few members like Doraemon, Ninja Hattori</p>
+</li>
+<li><p>You might see where I am going with this.</p>
+</li>
+<li><p>How about we try clustering these outliers.</p>
+</li>
+</ul>
+<h1 id="clustering-outliers">Clustering Outliers</h1>
+<table>
+<thead>
+<tr>
+<th>Anime</th>
+<th>Type</th>
+<th>Episodes</th>
+<th>Rating</th>
+<th>Members</th>
+<th>Cluster</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Naruto</td>
+<td>TV</td>
+<td>220</td>
+<td>7.81</td>
+<td>683297</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Mononoke Hime</td>
+<td>Movie</td>
+<td>1</td>
+<td>8.81</td>
+<td>339556</td>
+<td>3</td>
+</tr>
+<tr>
+<td>Sen to Chihiro no Kamikakushi</td>
+<td>Movie</td>
+<td>1</td>
+<td>8.93</td>
+<td>466254</td>
+<td>3</td>
+</tr>
+<tr>
+<td>Dragon Ball</td>
+<td>TV</td>
+<td>153</td>
+<td>8.16</td>
+<td>316102</td>
+<td>2</td>
+</tr>
+<tr>
+<td>FLCL</td>
+<td>OVA</td>
+<td>6</td>
+<td>8.06</td>
+<td>305165</td>
+<td>5</td>
+</tr>
+<tr>
+<td>InuYasha</td>
+<td>TV</td>
+<td>167</td>
+<td>7.89</td>
+<td>281632</td>
+<td>2</td>
+</tr>
+<tr>
+<td>Bleach</td>
+<td>TV</td>
+<td>366</td>
+<td>7.95</td>
+<td>624055</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Yu☆Gi☆Oh! Duel Monsters</td>
+<td>TV</td>
+<td>224</td>
+<td>7.57</td>
+<td>132099</td>
+<td>2</td>
+</tr>
+<tr>
+<td>Pokemon</td>
+<td>TV</td>
+<td>276</td>
+<td>7.43</td>
+<td>229157</td>
+<td>2</td>
+</tr>
+<tr>
+<td>Hellsing Ultimate</td>
+<td>OVA</td>
+<td>10</td>
+<td>8.59</td>
+<td>297454</td>
+<td>5</td>
+</tr>
+<tr>
+<td>Dragon Ball Z</td>
+<td>TV</td>
+<td>291</td>
+<td>8.32</td>
+<td>375662</td>
+<td>2</td>
+</tr>
+<tr>
+<td>Ginga Eiyuu Densetsu</td>
+<td>OVA</td>
+<td>110</td>
+<td>9.11</td>
+<td>80679</td>
+<td>--</td>
+</tr>
+<tr>
+<td>Gintama</td>
+<td>TV</td>
+<td>201</td>
+<td>9.04</td>
+<td>336376</td>
+<td>2</td>
+</tr>
+<tr>
+<td>D.Gray-man</td>
+<td>TV</td>
+<td>103</td>
+<td>8.2</td>
+<td>34399</td>
+<td>2</td>
+</tr>
+<tr>
+<td>Death Note</td>
+<td>TV</td>
+<td>37</td>
+<td>8.71</td>
+<td>1013917</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Code Geass: Hangyaku no Lelouch</td>
+<td>TV</td>
+<td>25</td>
+<td>8.83</td>
+<td>715151</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Katekyo Hitman Reborn!</td>
+<td>TV</td>
+<td>203</td>
+<td>8.37</td>
+<td>258103</td>
+<td>2</td>
+</tr>
+<tr>
+<td>Doraemon (1979)</td>
+<td>TV</td>
+<td>1787</td>
+<td>7.76</td>
+<td>14233</td>
+<td>4</td>
+</tr>
+<tr>
+<td>Ninja Hattori-kun</td>
+<td>TV</td>
+<td>694</td>
+<td>6.92</td>
+<td>2116</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Hetalia Axis Powers</td>
+<td>ONA</td>
+<td>52</td>
+<td>7.76</td>
+<td>144898</td>
+<td>--</td>
+</tr>
+<tr>
+<td>Fullmetal Alchemist: Brotherhood</td>
+<td>TV</td>
+<td>64</td>
+<td>9.26</td>
+<td>793665</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Manga Nippon Mukashibanashi (1976)</td>
+<td>TV</td>
+<td>1471</td>
+<td>6.48</td>
+<td>406</td>
+<td>4</td>
+</tr>
+<tr>
+<td>Angel Beats!</td>
+<td>TV</td>
+<td>13</td>
+<td>8.39</td>
+<td>717796</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Fairy Tail</td>
+<td>TV</td>
+<td>175</td>
+<td>8.22</td>
+<td>584590</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Obake no Q-tarou (1985)</td>
+<td>TV</td>
+<td>510</td>
+<td>6.54</td>
+<td>161</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Hoka Hoka Kazoku</td>
+<td>TV</td>
+<td>1428</td>
+<td>6.05</td>
+<td>194</td>
+<td>4</td>
+</tr>
+<tr>
+<td>Shima Shima Tora no Shimajirou</td>
+<td>TV</td>
+<td>726</td>
+<td>6.25</td>
+<td>237</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Sekai Monoshiri Ryoko</td>
+<td>TV</td>
+<td>1006</td>
+<td>5.92</td>
+<td>153</td>
+<td>-0</td>
+</tr>
+<tr>
+<td>Hunter x Hunter (2011)</td>
+<td>TV</td>
+<td>148</td>
+<td>9.13</td>
+<td>425855</td>
+<td>2</td>
+</tr>
+<tr>
+<td>Perman (1983)</td>
+<td>TV</td>
+<td>526</td>
+<td>6.34</td>
+<td>447</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Sword Art Online</td>
+<td>TV</td>
+<td>25</td>
+<td>7.83</td>
+<td>893100</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Oyako Club</td>
+<td>TV</td>
+<td>1818</td>
+<td>6.18</td>
+<td>160</td>
+<td>4</td>
+</tr>
+<tr>
+<td>Shingeki no Kyojin</td>
+<td>TV</td>
+<td>25</td>
+<td>8.54</td>
+<td>896229</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Kotowaza House</td>
+<td>TV</td>
+<td>773</td>
+<td>5.63</td>
+<td>110</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Fairy Tail (2014)</td>
+<td>TV</td>
+<td>102</td>
+<td>8.25</td>
+<td>255076</td>
+<td>2</td>
+</tr>
+<tr>
+<td>Monoshiri Daigaku: Ashita no Calendar</td>
+<td>TV</td>
+<td>1274</td>
+<td>6.8</td>
+<td>12</td>
+<td>4</td>
+</tr>
+<tr>
+<td>Manga Jinbutsushi</td>
+<td>TV</td>
+<td>365</td>
+<td>6.91</td>
+<td>71</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Kirin Monoshiri Yakata</td>
+<td>TV</td>
+<td>1565</td>
+<td>5.56</td>
+<td>116</td>
+<td>4</td>
+</tr>
+<tr>
+<td>Goman-hiki</td>
+<td>Movie</td>
+<td>100</td>
+<td>7</td>
+<td>56</td>
+<td>--</td>
+</tr>
+<tr>
+<td>Ninja-tai Gatchaman ZIP!</td>
+<td>TV</td>
+<td>475</td>
+<td>5.5</td>
+<td>46</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Kirin Ashita no Calendar</td>
+<td>TV</td>
+<td>1306</td>
+<td>6.43</td>
+<td>59</td>
+<td>4</td>
+</tr>
+<tr>
+<td>Shelter</td>
+<td>Music</td>
+<td>1</td>
+<td>8.38</td>
+<td>71136</td>
+<td>--</td>
+</tr>
+</tbody>
+</table>
+<h2 id="clusters-data">Clusters data</h2>
+<table>
+<thead>
+<tr>
+<th>Cluster</th>
+<th>0</th>
+<th>1</th>
+<th>2</th>
+<th>3</th>
+<th>4</th>
+<th>5</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>members</td>
+<td>7</td>
+<td>9</td>
+<td>10</td>
+<td>2</td>
+<td>7</td>
+<td>2</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><p>Now it should be clear what I was trying to say.</p>
+</li>
+<li><p>Outlier anime belonging with cluster 1, are most famous with the &#39;gaijin&#39; world. Naruto, Bleach, Code Geass, FMA these are long running anime with a great number of fan following.</p>
+</li>
+<li><p>Cluster 2 is also close to cluster 1 but with less members like Gintama, Dragon Ball</p>
+</li>
+<li><p>Cluster 4, 0 have long running anime with little fan following. These anime, since they are long running must be famous but have no members in this online community. We could say that these are the old anime not really famous among the online community, like Doraemon, Ninja Hattori mostly targeted for children.</p>
+</li>
+<li><p>Cluster 4, 0 were divided because of the sheer number of episodes cluster 4 has, almost double of cluster 0</p>
+</li>
+</ul>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../clustering_anime/k-means++.html" class="navigation navigation-prev " aria-label="Previous page: k-means++"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../ann_regressor_and_classifier/README" class="navigation navigation-next " aria-label="Next page: ANN regressor and classifier"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="../gitbook/app.js"></script>
+
+    
+    <script src="https://cdn.mathjax.org/mathjax/2.4-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-mathjax/plugin.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"fontSettings":{"theme":null,"family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>

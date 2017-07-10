@@ -1,0 +1,573 @@
+<!DOCTYPE HTML>
+<html lang="en-US" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <title>k-means++ | Nearest Neighbour Recommendations</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 1.0.3">
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    
+    
+    
+    <link rel="next" href="../outliers/README.html" />
+    
+    
+    <link rel="prev" href="../clustering_anime/README.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+<link rel="stylesheet" href="../gitbook/style.css">
+
+
+        
+    <div class="book"  data-level="2.1" data-basepath=".." data-revision="1499423496695">
+    
+
+<div class="book-summary">
+    <div class="book-search">
+        <input type="text" placeholder="Type to search" class="form-control" />
+    </div>
+    <ul class="summary">
+        
+    	
+    	
+    	
+
+        
+
+        
+    
+        
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../index.html">
+                        <i class="fa fa-check"></i>
+                        
+                         Introduction
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1" data-path="anime-recommendations/README.html">
+            
+                
+                    <a href="../anime-recommendations/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                         Anime Recommendations
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="1.1" data-path="anime-recommendations/README.html">
+            
+                
+                    <a href="../anime-recommendations/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.</b>
+                        
+                         Introduction
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.2" data-path="anime-recommendations/preprocessing.html">
+            
+                
+                    <a href="../anime-recommendations/preprocessing.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.2.</b>
+                        
+                         Preprocessing
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.3" data-path="anime-recommendations/a_simple_recommendation_sytem.html">
+            
+                
+                    <a href="../anime-recommendations/a_simple_recommendation_sytem.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.3.</b>
+                        
+                         A simple recommendation sytem
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.4" data-path="anime-recommendations/naruto_recommendations.html">
+            
+                
+                    <a href="../anime-recommendations/naruto_recommendations.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.4.</b>
+                        
+                         Naruto Recommendations
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.5" data-path="anime-recommendations/kimi_no_na_wa_recommendations.html">
+            
+                
+                    <a href="../anime-recommendations/kimi_no_na_wa_recommendations.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.5.</b>
+                        
+                         Kimi no Na Wa Recommendations
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.6" data-path="anime-recommendations/gintama_recommendations.html">
+            
+                
+                    <a href="../anime-recommendations/gintama_recommendations.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.6.</b>
+                        
+                         Gintama Recommendations
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.7" data-path="anime-recommendations/improvements.html">
+            
+                
+                    <a href="../anime-recommendations/improvements.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.7.</b>
+                        
+                         Improvements
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.8" data-path="anime-recommendations/gintama_recommendations_ii.html">
+            
+                
+                    <a href="../anime-recommendations/gintama_recommendations_ii.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.8.</b>
+                        
+                         Gintama Recommendations II
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.9" data-path="anime-recommendations/conclusion.html">
+            
+                
+                    <a href="../anime-recommendations/conclusion.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.9.</b>
+                        
+                         Conclusion
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.10" data-path="anime-recommendations/further_work.html">
+            
+                
+                    <a href="../anime-recommendations/further_work.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.10.</b>
+                        
+                         Further Work
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2" data-path="clustering_anime/README.html">
+            
+                
+                    <a href="../clustering_anime/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                         Clustering anime
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter active" data-level="2.1" data-path="clustering_anime/k-means++.html">
+            
+                
+                    <a href="../clustering_anime/k-means++.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.</b>
+                        
+                         k-means++
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3" data-path="outliers/README.html">
+            
+                
+                    <a href="../outliers/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                         Outliers
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4" data-path="ann_regressor_and_classifier/README">
+            
+                
+                    <a href="../ann_regressor_and_classifier/README">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                         ANN regressor and classifier
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="4.1" data-path="ann_regressor_and_classifier/ann_regressor.html">
+            
+                
+                    <a href="../ann_regressor_and_classifier/ann_regressor.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.</b>
+                        
+                         ANN regressor
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4.2" data-path="ann_regressor_and_classifier/ann_classifier.html">
+            
+                
+                    <a href="../ann_regressor_and_classifier/ann_classifier.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.2.</b>
+                        
+                         ANN classifier
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+
+        
+        <li class="divider"></li>
+        <li>
+            <a href="http://www.gitbook.io/" target="blank" class="gitbook-link">Published using GitBook</a>
+        </li>
+        
+    </ul>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header">
+    <!-- Actions Left -->
+    <a href="#" class="btn pull-left toggle-summary" aria-label="Toggle summary"><i class="fa fa-align-justify"></i></a>
+    <a href="#" class="btn pull-left toggle-search" aria-label="Toggle search"><i class="fa fa-search"></i></a>
+    
+    <div id="font-settings-wrapper" class="dropdown pull-left">
+        <a href="#" class="btn toggle-dropdown" aria-label="Toggle font settings"><i class="fa fa-font"></i>
+        </a>
+        <div class="dropdown-menu font-settings">
+    <div class="dropdown-caret">
+        <span class="caret-outer"></span>
+        <span class="caret-inner"></span>
+    </div>
+
+    <div class="buttons">
+        <button type="button" id="reduce-font-size" class="button size-2">A</button>
+        <button type="button" id="enlarge-font-size" class="button size-2">A</button>
+    </div>
+
+    <div class="buttons font-family-list">
+        <button type="button" data-font="0" class="button">Serif</button>
+        <button type="button" data-font="1" class="button">Sans</button>
+    </div>
+
+    <div class="buttons color-theme-list">
+        <button type="button" id="color-theme-preview-0" class="button size-3" data-theme="0">White</button>
+        <button type="button" id="color-theme-preview-1" class="button size-3" data-theme="1">Sepia</button>
+        <button type="button" id="color-theme-preview-2" class="button size-3" data-theme="2">Night</button>
+    </div>
+</div>
+
+    </div>
+
+    <!-- Actions Right -->
+    
+    <div class="dropdown pull-right">
+        <a href="#" class="btn toggle-dropdown" aria-label="Toggle share dropdown"><i class="fa fa-share-alt"></i>
+        </a>
+        <div class="dropdown-menu font-settings dropdown-left">
+            <div class="dropdown-caret">
+                <span class="caret-outer"></span>
+                <span class="caret-inner"></span>
+            </div>
+            <div class="buttons">
+                <button type="button" data-sharing="twitter" class="button">Twitter</button>
+                <button type="button" data-sharing="google-plus" class="button">Google</button>
+                <button type="button" data-sharing="facebook" class="button">Facebook</button>
+                <button type="button" data-sharing="weibo" class="button">Weibo</button>
+                <button type="button" data-sharing="instapaper" class="button">Instapaper</button>
+            </div>
+        </div>
+    </div>
+    
+
+    
+    <a href="#" target="_blank" class="btn pull-right google-plus-sharing-link sharing-link" data-sharing="google-plus" aria-label="Share on Google Plus"><i class="fa fa-google-plus"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right facebook-sharing-link sharing-link" data-sharing="facebook" aria-label="Share on Facebook"><i class="fa fa-facebook"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right twitter-sharing-link sharing-link" data-sharing="twitter" aria-label="Share on Twitter"><i class="fa fa-twitter"></i></a>
+    
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../" >Nearest Neighbour Recommendations</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-gitbook_7299">
+                    
+                        <h1 id="k-means">k-means++</h1>
+<pre><code class="lang-sql"><span class="hljs-operator"><span class="hljs-keyword">declare</span>
+k <span class="hljs-built_in">integer</span>:=<span class="hljs-number">4</span>;</span>
+d number;
+n number;
+misc number;
+misc2 number;
+miscf float;
+<span class="hljs-operator"><span class="hljs-keyword">begin</span>
+    <span class="hljs-keyword">delete</span> <span class="hljs-keyword">from</span> test_norm_classes;</span>
+<span class="hljs-comment">-- Initializing no of records, dimensions</span>
+    <span class="hljs-operator"><span class="hljs-keyword">select</span> <span class="hljs-keyword">count</span>(id) <span class="hljs-keyword">into</span> n <span class="hljs-keyword">from</span> test;</span>
+    <span class="hljs-operator"><span class="hljs-keyword">select</span> <span class="hljs-keyword">count</span>(*)-<span class="hljs-number">2</span> <span class="hljs-keyword">into</span> d <span class="hljs-keyword">from</span> user_tab_columns <span class="hljs-keyword">where</span> table_name = <span class="hljs-string">'TEST'</span>;</span>
+<span class="hljs-comment">-- initializing means</span>
+    <span class="hljs-operator"><span class="hljs-keyword">delete</span> <span class="hljs-keyword">from</span> test_norm_means;</span>
+    misc:=randomClass(n);
+    <span class="hljs-operator"><span class="hljs-keyword">select</span> <span class="hljs-keyword">min</span>(id) <span class="hljs-keyword">into</span> misc2 <span class="hljs-keyword">from</span> test <span class="hljs-keyword">where</span> id&gt;=misc;</span>
+    <span class="hljs-operator"><span class="hljs-keyword">insert</span> <span class="hljs-keyword">into</span> test_norm_means (<span class="hljs-keyword">select</span> att,<span class="hljs-number">1</span>,<span class="hljs-keyword">data</span>,<span class="hljs-number">0</span> <span class="hljs-keyword">from</span> test_norm <span class="hljs-keyword">where</span> att&lt;&gt;-<span class="hljs-number">1</span> <span class="hljs-keyword">and</span> id=misc2);</span>
+    for i in 1 .. k-1
+    loop
+        <span class="hljs-operator"><span class="hljs-keyword">delete</span> <span class="hljs-keyword">from</span> test_norm <span class="hljs-keyword">where</span> att=-<span class="hljs-number">1</span>;</span>
+
+        <span class="hljs-operator"><span class="hljs-keyword">insert</span> <span class="hljs-keyword">into</span> test_norm <span class="hljs-keyword">select</span> id,-<span class="hljs-number">1</span>,<span class="hljs-keyword">min</span>(dis) <span class="hljs-keyword">from</span>
+            (<span class="hljs-keyword">select</span> id,class,<span class="hljs-keyword">sum</span>((<span class="hljs-keyword">data</span>-mean)*(<span class="hljs-keyword">data</span>-mean)) <span class="hljs-keyword">as</span> dis <span class="hljs-keyword">from</span> test_norm, test_norm_means
+                <span class="hljs-keyword">where</span> test_norm.att=test_norm_means.att <span class="hljs-keyword">group</span> <span class="hljs-keyword">by</span> id,class) <span class="hljs-keyword">group</span> <span class="hljs-keyword">by</span> id;</span>
+
+
+        for rec in (<span class="hljs-operator"><span class="hljs-keyword">select</span> id <span class="hljs-keyword">from</span> test_norm <span class="hljs-keyword">where</span> att=-<span class="hljs-number">1</span> <span class="hljs-keyword">order</span> <span class="hljs-keyword">by</span> <span class="hljs-keyword">data</span> <span class="hljs-keyword">desc</span>)
+        loop
+
+            misc2:=rec.id;</span>
+
+            <span class="hljs-comment">-- EXIT WHEN randomClass(2)=1 or misc&gt;n;</span>
+
+        <span class="hljs-operator"><span class="hljs-keyword">end</span> loop;</span>
+
+        <span class="hljs-operator"><span class="hljs-keyword">insert</span> <span class="hljs-keyword">into</span> test_norm_means
+            (<span class="hljs-keyword">select</span> att,i+<span class="hljs-number">1</span>,<span class="hljs-keyword">data</span>,<span class="hljs-number">0</span> <span class="hljs-keyword">from</span> test_norm <span class="hljs-keyword">where</span> att&lt;&gt;-<span class="hljs-number">1</span> <span class="hljs-keyword">and</span> id=misc2);</span>
+
+    <span class="hljs-operator"><span class="hljs-keyword">end</span> loop;</span>
+    <span class="hljs-operator"><span class="hljs-keyword">delete</span> <span class="hljs-keyword">from</span> test_norm <span class="hljs-keyword">where</span> att=-<span class="hljs-number">1</span>;</span>
+    <span class="hljs-operator"><span class="hljs-keyword">insert</span> <span class="hljs-keyword">into</span> test_norm_means <span class="hljs-keyword">select</span> att,class,mean+<span class="hljs-number">1</span>,<span class="hljs-number">1</span> <span class="hljs-keyword">from</span> test_norm_means;</span>
+for jk in  1..1000
+loop
+dbms_output.put_line(jk);
+<span class="hljs-comment">-- Break Condition</span>
+
+    <span class="hljs-operator"><span class="hljs-keyword">select</span> <span class="hljs-keyword">max</span>((a.mean-b.mean)*(a.mean-b.mean)) <span class="hljs-keyword">into</span> miscf <span class="hljs-keyword">from</span>
+        (<span class="hljs-keyword">select</span> att,class,mean <span class="hljs-keyword">from</span> test_norm_means <span class="hljs-keyword">where</span> ol=<span class="hljs-number">0</span>) a,
+        (<span class="hljs-keyword">select</span> att,class,mean <span class="hljs-keyword">from</span> test_norm_means <span class="hljs-keyword">where</span> ol=<span class="hljs-number">1</span>) b
+    <span class="hljs-keyword">where</span> a.class=b.class <span class="hljs-keyword">and</span> a.att=b.att;</span>
+
+    EXIT WHEN miscf=0;
+
+    <span class="hljs-operator"><span class="hljs-keyword">delete</span> <span class="hljs-keyword">from</span> test_norm_means <span class="hljs-keyword">where</span> ol=<span class="hljs-number">1</span>;</span>
+
+<span class="hljs-comment">-- Minimization</span>
+
+    <span class="hljs-operator"><span class="hljs-keyword">delete</span> <span class="hljs-keyword">from</span> test_norm_classes;</span>
+
+    <span class="hljs-operator"><span class="hljs-keyword">insert</span> <span class="hljs-keyword">into</span> test_norm_classes <span class="hljs-keyword">with</span> t <span class="hljs-keyword">as</span>(
+    <span class="hljs-keyword">select</span> id,class,<span class="hljs-keyword">sum</span>((<span class="hljs-keyword">data</span>-mean)*(<span class="hljs-keyword">data</span>-mean)) <span class="hljs-keyword">as</span> dis <span class="hljs-keyword">from</span> test_norm, test_norm_means
+                        <span class="hljs-keyword">where</span> test_norm.att=test_norm_means.att <span class="hljs-keyword">group</span> <span class="hljs-keyword">by</span> id,class)
+    (<span class="hljs-keyword">select</span> id,class <span class="hljs-keyword">from</span> t <span class="hljs-keyword">where</span> dis <span class="hljs-keyword">in</span> (<span class="hljs-keyword">select</span> <span class="hljs-keyword">min</span>(dis) <span class="hljs-keyword">from</span> t <span class="hljs-keyword">group</span> <span class="hljs-keyword">by</span> id));</span>
+
+
+<span class="hljs-comment">-- Expectation</span>
+<span class="hljs-comment">--    delete from test_norm_means;</span>
+    <span class="hljs-operator"><span class="hljs-keyword">update</span> test_norm_means <span class="hljs-keyword">set</span> ol=<span class="hljs-number">1</span>;</span>
+
+    <span class="hljs-operator"><span class="hljs-keyword">insert</span> <span class="hljs-keyword">into</span> test_norm_means
+        (<span class="hljs-keyword">select</span> att,class,<span class="hljs-keyword">avg</span>(<span class="hljs-keyword">data</span>),<span class="hljs-number">0</span> <span class="hljs-keyword">from</span> test_norm,test_norm_classes
+            <span class="hljs-keyword">where</span> test_norm.id=test_norm_classes.id <span class="hljs-keyword">group</span> <span class="hljs-keyword">by</span> att,class);</span>
+
+<span class="hljs-operator"><span class="hljs-keyword">end</span> loop;</span>
+
+<span class="hljs-operator"><span class="hljs-keyword">delete</span> <span class="hljs-keyword">from</span> test_norm_means <span class="hljs-keyword">where</span> ol=<span class="hljs-number">1</span>;</span>
+
+<span class="hljs-operator"><span class="hljs-keyword">select</span> <span class="hljs-keyword">sum</span>((<span class="hljs-keyword">data</span>-mean)*(<span class="hljs-keyword">data</span>-mean)) <span class="hljs-keyword">into</span> miscf <span class="hljs-keyword">from</span> test_norm, test_norm_means, test_norm_classes
+    <span class="hljs-keyword">where</span> test_norm_classes.class=test_norm_means.class
+        <span class="hljs-keyword">and</span> test_norm.att=test_norm_means.att
+        <span class="hljs-keyword">and</span> test_norm.id=test_norm_classes.id;</span>
+dbms_output.put_line(miscf);
+<span class="hljs-operator"><span class="hljs-keyword">end</span>;</span>
+/
+</code></pre>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../clustering_anime/README.html" class="navigation navigation-prev " aria-label="Previous page: Clustering anime"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../outliers/README.html" class="navigation navigation-next " aria-label="Next page: Outliers"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="../gitbook/app.js"></script>
+
+    
+    <script src="https://cdn.mathjax.org/mathjax/2.4-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-mathjax/plugin.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"fontSettings":{"theme":null,"family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>
