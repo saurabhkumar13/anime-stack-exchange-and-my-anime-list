@@ -56,7 +56,7 @@ dbms_output.put_line(jk);
 
     delete from test_norm_means where ol=1;
 
--- Minimization
+-- Assignment Step
 
     delete from test_norm_classes;
 
@@ -66,8 +66,7 @@ dbms_output.put_line(jk);
     (select id,class from t where dis in (select min(dis) from t group by id));
 
 
--- Expectation
---    delete from test_norm_means;
+-- Update Step
     update test_norm_means set ol=1;
 
     insert into test_norm_means

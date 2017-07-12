@@ -1,4 +1,4 @@
-.# ANN classifier
+# ANN classifier
 ```sql
 declare
 hidden_num number:=4;

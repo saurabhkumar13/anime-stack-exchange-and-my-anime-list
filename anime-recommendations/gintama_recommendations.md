@@ -1,6 +1,6 @@
 # Gintama Recommendations
 
-![](https://upload.wikimedia.org/wikipedia/en/e/ee/Gintamavol01cover.jpg)
+![](../assets/Gintamavol01cover.jpg)
 
 | ANIME_ID | NAME | GENRE | TYPE | EPISODE | RATING | MEMBERS | DISTANCE |
 | -- | -- | -- | -- | -- | -- | -- | -- |

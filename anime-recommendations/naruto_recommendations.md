@@ -1,6 +1,6 @@
 # Naruto Recommendations
 
-![](https://upload.wikimedia.org/wikipedia/en/9/94/NarutoCoverTankobon1.jpg)
+![](../assets/NarutoCoverTankobon1.jpg)
 
 | ANIME_ID | NAME | GENRE | TYPE | EPISODE | RATING | MEMBERS | DISTANCE |
 | -- | -- | -- | -- | -- | -- | -- | -- |

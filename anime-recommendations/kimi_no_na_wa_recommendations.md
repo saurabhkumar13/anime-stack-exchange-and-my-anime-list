@@ -1,6 +1,6 @@
 # Kimi no Na Wa Recommendations
 
-![](https://upload.wikimedia.org/wikipedia/en/0/0b/Your_Name_poster.png)
+![](../assets/Your_Name_poster.png)
 
 | ANIME_ID | NAME | GENRE | TYPE | EPISODE | RATING | MEMBERS | DISTANCE |
 | -- | -- | -- | -- | -- | -- | -- | -- |
