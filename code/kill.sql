@@ -1,0 +1,5 @@
+SELECT sid, serial#, status from v$session where OSUSER like '%saurabh%';
+
+ALTER SYSTEM KILL SESSION '828,73';
+ALTER SYSTEM KILL SESSION '2952,7';
+ALTER SYSTEM KILL SESSION '3192,69';
